@@ -1,0 +1,37 @@
+﻿@model PiranhaMVC.Blocks.DepartmentSectionBlock
+
+<section class="ftco-section ftco-no-pt ftco-no-pb" id="@Model.Id">
+    <div class="container-fluid px-0">
+        <div class="row no-gutters">
+            <div class="col-md-4 d-flex">
+                @if (Model.Image.HasValue)
+                {
+                    <div class="img img-dept align-self-stretch" style="background-image: url(@Url.Content(Model.Image.Media.PublicUrl));"></div>
+                }
+            </div>
+
+            <div class="col-md-8">
+                <div class="row no-gutters">
+
+                    @*Max 9 fixed section*@
+                    @for (int i = 0; i < 3; i++)
+                    {
+                        <div class="col-md-4">
+
+                            @for (int j = 0; j < 3; j++)
+                            {
+                                var n = (j * 3) + i;
+                                if (n < Model.Items.Count)
+                                {
+                                    @Html.DisplayFor(m => Model.Items[n], Model.Items[n].GetType().Name)
+                                }
+                            }
+
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

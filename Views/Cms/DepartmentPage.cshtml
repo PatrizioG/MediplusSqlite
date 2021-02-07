@@ -1,0 +1,31 @@
+﻿@model PiranhaMVC.Models.DepartmentPage
+@{
+    ViewData["Title"] = Model.Title;
+}
+<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="@Model.Title.ToLower()">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-md-6 col-lg-5 d-flex">
+                @if (Model.PrimaryImage.HasValue)
+                {
+                    <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(@Url.Content((Model.PrimaryImage.Media.PublicUrl)));">
+                    </div>
+                }
+            </div>
+            <div class="col-md-6 col-lg-7 pl-lg-5 py-md-5">
+                <div class="py-md-5">
+                    <div class="row justify-content-start pb-3">
+                        <div class="col-md-12 heading-section ftco-animate p-4 p-lg-5">
+                            <h2 class="mb-4">@Model.Title</h2>
+                            <p>@Html.Raw(Model.Excerpt)</p>
+                            <p>
+                                <a href="/" class="btn btn-primary py-3 px-4">Torna indietro</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

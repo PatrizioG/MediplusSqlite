@@ -1,0 +1,11 @@
+﻿@model PiranhaMVC.Blocks.DepartmentBlock
+
+<div class="department-wrap p-4 ftco-animate">
+    <div class="text p-2 text-center">
+        <div class="icon">
+            <span class="flaticon-stethoscope"></span>
+        </div>
+        <h3><a href="@($"{(string)Model.Link}#{((string)Model.Title).ToLower()}")">@Model.Title</a></h3>
+        @Html.Raw(Model.Description)
+    </div>
+</div>

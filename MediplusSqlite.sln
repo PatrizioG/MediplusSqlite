@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediplusSqlite", "MediplusSqlite.csproj", "{70139DF9-DFC8-4E0C-9492-CBFBAC855C7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Piranha.CookiePolicy", "..\piranha modules\Piranha.CookiePolicy\Piranha.CookiePolicy.csproj", "{C65671FB-5B60-49C0-9B69-C6E50A1C541E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Piranha.SendGrid", "..\piranha modules\Piranha.SendGrid\Piranha.SendGrid.csproj", "{62007AB3-C71C-4D19-A409-A552E9415B9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70139DF9-DFC8-4E0C-9492-CBFBAC855C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70139DF9-DFC8-4E0C-9492-CBFBAC855C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70139DF9-DFC8-4E0C-9492-CBFBAC855C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70139DF9-DFC8-4E0C-9492-CBFBAC855C7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65671FB-5B60-49C0-9B69-C6E50A1C541E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65671FB-5B60-49C0-9B69-C6E50A1C541E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65671FB-5B60-49C0-9B69-C6E50A1C541E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65671FB-5B60-49C0-9B69-C6E50A1C541E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62007AB3-C71C-4D19-A409-A552E9415B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62007AB3-C71C-4D19-A409-A552E9415B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62007AB3-C71C-4D19-A409-A552E9415B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62007AB3-C71C-4D19-A409-A552E9415B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E30ADCF-92A1-4474-B922-598BBBC17CA6}
+	EndGlobalSection
+EndGlobal
